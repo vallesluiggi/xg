@@ -1,0 +1,59 @@
+<div class="container">
+    <h2 class="my-4">Cat Information: {{ catData?.name }}</h2>
+  
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Attribute</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Weight (Imperial)</td>
+          <td>{{ catData?.weight?.imperial }} lbs</td>
+        </tr>
+        <tr>
+          <td>Weight (Metric)</td>
+          <td>{{ catData?.weight?.metric }} kg</td>
+        </tr>
+        <tr>
+          <td>ID</td>
+          <td>{{ catData?.id }}</td>
+        </tr>
+        <tr>
+          <td>Temperament</td>
+          <td>{{ catData?.temperament }}</td>
+        </tr>
+        <tr>
+          <td>Origin</td>
+          <td>{{ catData?.origin }}</td>
+        </tr>
+        <tr>
+          <td>Description</td>
+          <td>{{ catData?.description }}</td>
+        </tr>
+        <tr>
+          <td>Life Span</td>
+          <td>{{ catData?.life_span }} years</td>
+        </tr>
+        <tr>
+          <td>Affection Level</td>
+          <td>{{ catData?.affection_level }} / 5</td>
+        </tr>
+        <tr>
+          <td>Child Friendly</td>
+          <td>{{ catData?.child_friendly }} / 5</td>
+        </tr>
+        <tr>
+          <td>Dog Friendly</td>
+          <td>{{ catData?.dog_friendly }} / 5</td>
+        </tr>
+        <tr>
+          <td>Wikipedia</td>
+          <td><a href="{{ catData?.wikipedia_url }}" target="_blank">Link</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

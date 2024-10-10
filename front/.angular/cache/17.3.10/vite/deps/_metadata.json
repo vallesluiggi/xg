@@ -1,0 +1,85 @@
+{
+  "hash": "d75d927a",
+  "configHash": "78cf0318",
+  "lockfileHash": "2e583eb4",
+  "browserHash": "12c4febd",
+  "optimized": {
+    "@angular/common": {
+      "src": "../../../../../node_modules/@angular/common/fesm2022/common.mjs",
+      "file": "@angular_common.js",
+      "fileHash": "7732f457",
+      "needsInterop": false
+    },
+    "@angular/common/http": {
+      "src": "../../../../../node_modules/@angular/common/fesm2022/http.mjs",
+      "file": "@angular_common_http.js",
+      "fileHash": "6abdf9a7",
+      "needsInterop": false
+    },
+    "@angular/core": {
+      "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
+      "file": "@angular_core.js",
+      "fileHash": "47ea1fde",
+      "needsInterop": false
+    },
+    "@angular/forms": {
+      "src": "../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
+      "file": "@angular_forms.js",
+      "fileHash": "c3519cf7",
+      "needsInterop": false
+    },
+    "@angular/platform-browser": {
+      "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
+      "file": "@angular_platform-browser.js",
+      "fileHash": "bbeae7bf",
+      "needsInterop": false
+    },
+    "@angular/router": {
+      "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
+      "file": "@angular_router.js",
+      "fileHash": "5ec94a99",
+      "needsInterop": false
+    },
+    "ngx-bootstrap/carousel": {
+      "src": "../../../../../node_modules/ngx-bootstrap/carousel/fesm2022/ngx-bootstrap-carousel.mjs",
+      "file": "ngx-bootstrap_carousel.js",
+      "fileHash": "1a1dc4e7",
+      "needsInterop": false
+    },
+    "rxjs": {
+      "src": "../../../../../node_modules/rxjs/dist/esm5/index.js",
+      "file": "rxjs.js",
+      "fileHash": "881dffe2",
+      "needsInterop": false
+    },
+    "rxjs/operators": {
+      "src": "../../../../../node_modules/rxjs/dist/esm5/operators/index.js",
+      "file": "rxjs_operators.js",
+      "fileHash": "c3a24a3c",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-VZPNQK4B": {
+      "file": "chunk-VZPNQK4B.js"
+    },
+    "chunk-HLGAAUXZ": {
+      "file": "chunk-HLGAAUXZ.js"
+    },
+    "chunk-DVU53F2F": {
+      "file": "chunk-DVU53F2F.js"
+    },
+    "chunk-FUGTDLQW": {
+      "file": "chunk-FUGTDLQW.js"
+    },
+    "chunk-JWFVXZTN": {
+      "file": "chunk-JWFVXZTN.js"
+    },
+    "chunk-GY475XLT": {
+      "file": "chunk-GY475XLT.js"
+    },
+    "chunk-FQPGRUHQ": {
+      "file": "chunk-FQPGRUHQ.js"
+    }
+  }
+}

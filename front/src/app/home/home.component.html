@@ -1,0 +1,61 @@
+<div class="container p-4">
+  <div class="row">
+    <div class="col-md-6 col-12">
+      <div class="card">
+        <div class="card-body">
+          <div *ngIf="loading">
+            <div class="spinner-border" role="status">
+              <span class="sr-only">Loading...</span>
+            </div>
+          </div>
+          <div class="row" *ngIf="!loading ">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label for="breeds">Select breeds</label>
+                <select
+                  id="breeds"
+                  class="form-control"
+                  [(ngModel)]="selectedOption"
+                  (change)="onSelect()"
+                >
+                  <option *ngFor="let option of content" [value]="option.id">
+                    {{ option.name }}
+                  </option>
+                </select>
+              </div>
+ 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-12">
+
+      
+      <div class="card" *ngIf="selectedOption != null">
+        <div class="card-body">
+          <div *ngIf="loadingCarousel && selectedOption">
+            <div class="spinner-border" role="status">
+              <span class="sr-only">Loading...</span>
+            </div>
+          </div>
+          <div class="row" *ngIf="!loadingCarousel && selectedOption">
+              <app-carousel-custom [slides]="images"></app-carousel-custom>
+              
+          </div>
+          
+          <span class="">{{ dataCat?.description }}</span>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="row" *ngIf="!loadingCarousel && selectedOption">
+    <div class="col-md-12">
+      <app-cat-table-info [catData]="dataCat"></app-cat-table-info>
+      </div>
+  </div>
+</div>

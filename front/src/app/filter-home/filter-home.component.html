@@ -1,0 +1,50 @@
+ 
+	<div class="mb-3 mt-4 row">
+		<label for="table-complete-search" class="col-xs-3 col-sm-auto col-form-label">Search:</label>
+		<div class="col-md-6 col-12">
+			<input
+				id="table-complete-search"
+				type="text"
+				class="form-control"
+				name="query"  
+                [(ngModel)]="query"
+			/>
+		</div> 
+        <button class="btn btn-primary" (click)="filterCats()">Search</button>
+	</div> 
+    <div class="container">
+        <h2 class="my-4">Cat Breeds</h2>
+      
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Weight (Imperial)</th>
+              <th>Weight (Metric)</th>
+              <th>Temperament</th>
+              <th>Origin</th>
+              <th>Life Span</th>
+              <th>Affection Level</th>
+              <th>Child Friendly</th>
+              <th>Dog Friendly</th>
+              <th>Wikipedia</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let catData of catDataList">
+              <td>{{ catData?.name }}</td>
+              <td>{{ catData?.weight?.imperial }} lbs</td>
+              <td>{{ catData?.weight?.metric }} kg</td>
+              <td>{{ catData?.temperament }}</td>
+              <td>{{ catData?.origin }}</td>
+              <td>{{ catData?.life_span }} years</td>
+              <td>{{ catData?.affection_level }} / 5</td>
+              <td>{{ catData?.child_friendly }} / 5</td>
+              <td>{{ catData?.dog_friendly }} / 5</td>
+              <td><a href="{{ catData?.wikipedia_url }}" target="_blank">Link</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+ 
